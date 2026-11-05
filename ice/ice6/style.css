@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(120, 96, 64);
+    font-family: Georgia, serif;
+}
+
+#formContainer {
+    width: 420px;
+    margin: 20px auto;
+    background: white;
+    border: 10px solid #172c80;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Top picture */
+.hero {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Form heading */
+h3 {
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 19px;
+}
+
+/* Form layout */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 12px;
+    padding: 5px 20px 20px;
+}
+
+/* Labels */
+form > label {
+    align-self: center;
+    font-size: 15px;
+}
+
+/* Text boxes */
+form > input {
+    width: 100%;
+    height: 23px;
+}
+
+/* Gender choices */
+form > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Checkboxes and submit button */
+form section {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+form section label {
+    font-size: 14px;
+}
+
+/* Close button */
+#closeBtn {
+    position: absolute;
+top: 12px;    left: 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Bottom images */
+.bookImages {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100px;
+    background: #171717;
+}
+
+.bookImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+    border-right: 2px solid white;
+}
+
+/* Submitted information */
+#output {
+    width: 420px;
+    margin: 20px auto;
+    color: white;
+}
