@@ -99,9 +99,9 @@ nav a:hover {
 /* PROFILE PICTURE */
 
 .hero-image {
-    width: 280px;
-    height: 280px;
-    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    flex: 0 0 250px;
     overflow: hidden;
     border: 3px solid #4A7899;
     background-color: #D7E5EA;
@@ -112,9 +112,11 @@ nav a:hover {
 .hero-image img {
     width: 100%;
     height: 100%;
-    display: block;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 
 .hero-text {
@@ -419,8 +421,9 @@ footer p {
     }
 
     .hero-image {
-        width: 230px;
-        height: 230px;
+        width: 220px;
+        height: 220px;
+        flex: 0 0 220px;
     }
 
     .hero-text h2 {
