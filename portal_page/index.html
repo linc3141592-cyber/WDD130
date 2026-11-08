@@ -1,169 +1,187 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lincoln | Portal Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <link rel="stylesheet" href="style.css"><body>
+<body>
+
     <header>
-        <h1>Lincoln Scott</h1>
-        <img src="img/logo.png" alt="My logo">
+        <div class="header-content">
+            <div class="branding">
+                <img src="img/logo.png" alt="Lincoln Scott logo">
+                <h1>Lincoln Scott</h1>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#interests">Interests</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="wwr/index.html">WWR</a></li>
-            <li><a href="ice/">ICE</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
-    </nav>
-
     <main>
-         <section>
-            <h2>Welcome to My Portal</h2>
-            <p>This is a small page that contains some info thats all about me!</p>
-            <a href="about.html">Learn More About Me!</a>
+
+        <!-- Welcome Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+
+                <div class="hero-image">
+                    <img src="picture_of_me.jpeg" alt="Picture of me">                </div>
+
+                <div class="hero-text">
+                    <h2>Hi, I'm Lincoln</h2>
+                    <p>I am a fun and outgoing person, I love to hang out with friends and go on adventures!</p>
+                    <a class="button" href="#about">Learn More</a>
+                </div>
+
+            </div>
         </section>
 
+        <!-- About Me -->
+        <section class="about section" id="about">
+            <h2>About Me</h2>
 
-<section>
-    <h2>About Me</h2>
+            <div class="about-intro">
+                <p>
+                    Hello! I am 17. I graduated high school early
+                    and came to college early. I was homeschooled
+                    since first grade. I am the co-founder and owner
+                    of three companies. I love mountain biking,
+                    paintball, and hanging out with friends.
+                    My favorite movie is Gran Turismo.
+                </p>
+            </div>
 
-    <p>
-        Hello, this part is about me.
-        I am 17. I graduated high school early and came
-        to college early. I was homeschooled since first
-        grade. I am the co-founder and owner of three
-        companies. I love mountain biking, paintball,
-        hanging out with friends, and my favorite movie
-        is Gran Turismo.
-    </p>
+            <div class="cards">
 
-    <article>
-        <h3>Things I've Done</h3>
-        <p>I have gone to hawaii.
-            I have eaten Chicken heart.
-            I have helpped deliver baby pigs.
-            I have mountain biked down a mountian in arkansas.
-        </p>
-    </article>
+                <article class="info-card">
+                    <div class="card-icon">⛰</div>
+                    <h3>Things I've Done</h3>
+                    <ul>
+                        <li>Gone to Hawaii</li>
+                        <li>Eaten chicken heart</li>
+                        <li>Helped deliver baby pigs</li>
+                        <li>Mountain biked down a mountain in Arkansas</li>
+                    </ul>
+                </article>
 
-    <article>
-        <h3>Skills I Have</h3>
-        
-            <ul>
-                <li>Paintball</li>
-                <li>Slacklining</li>
-                <li>Mountain biking</li>
-                <li>Cooking</li>
-                <li>Learning</li>
-                <li>Listening</li>
-                <li>Ice skating</li>
-            </ul>
+                <article class="info-card" id="interests">
+                    <div class="card-icon">⚙</div>
+                    <h3>Skills I Have</h3>
+                    <ul>
+                        <li>Paintball</li>
+                        <li>Slacklining</li>
+                        <li>Mountain biking</li>
+                        <li>Cooking</li>
+                        <li>Learning</li>
+                        <li>Listening</li>
+                        <li>Ice skating</li>
+                    </ul>
+                </article>
 
-    </article>
+                <article class="info-card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Accomplishments</h3>
+                    <ul>
+                        <li>Beaten the Missouri paintball team</li>
+                        <li>Graduated high school</li>
+                        <li>Made it to college early</li>
+                        <li>Almost finished my mission papers</li>
+                    </ul>
+                </article>
 
-    <article>
-        <h3>Accomplishments</h3>
-        <p>I have beaten the missouri paintball team
-            I have graduated
-            I made it to college
-            I have almost turned my mission papers in.
-        </p>
-    </article>
+            </div>
+        </section>
 
-    <h3>My Interests</h3>
-    <ul>
-        <li>Mountain biking</li>
-        <li>Paintball</li>
-        <li>Hanging out with friends</li>
-    </ul>
-</section>
+        <!-- Goals -->
+        <section class="goals section">
+            <div class="goals-content">
+                <div class="goals-text">
+                    <h2>My Goals</h2>
 
+                    <ul>
+                        <li>Graduate college</li>
+                        <li>Keep a 4.0 GPA</li>
+                        <li>Earn all A's and work toward a scholarship</li>
+                        <li>Serve a mission</li>
+                        <li>Get married in the temple</li>
+                        <li>Raise a family</li>
+                        <li>Have fun along the way</li>
+                    </ul>
 
-    <section>
-        <h2>My Goals</h2>
+                    <h3>Long-Term Plans</h3>
+                    <p>
+                        Start journaling and building daily habits
+                        that will help me for the rest of my life.
+                    </p>
+                </div>
 
-        
-            <ul>
-                <li>Graduate college</li>
-                <li>Keep a 4.0 GPA</li>
-                <li>Earn all A's to work toward a scholarship</li>
-                <li>Serve a mission</li>
-                <li>Get married in the temple</li>
-                <li>Raise a family</li>
-                <li>Have fun along the way</li>
-            </ul>
+                <div class="mountain-art">
+                    <div class="mountain mountain-one"></div>
+                    <div class="mountain mountain-two"></div>
+                    <div class="mountain mountain-three"></div>
+                    <div class="flag"></div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Projects -->
+        <section class="projects section">
+            <h2>My Projects</h2>
+            <p>Here are some projects I have worked on in WDD130.</p>
 
-        <h3>Future Goals</h3>
-        <ul>
-            <li>Get married</li>
-            <li>Get a good job</li>
-            <li>Raise a family</li>
-        </ul>
+            <div class="project-list">
+                <article>
+                    <h3>WWR</h3>
+                    <p>My white water rafting website.</p>
+                    <a href="wwr/index.html">View Project</a>
+                </article>
 
-        <h4>Long-Term Plans</h4>
-        <p>Start journaling and doing daily habits that will help me for the rest of my life.</p>
-    </section>
+                <article>
+                    <h3>ICE</h3>
+                    <p>My in-class exercises and assignments.</p>
+                    <a href="ice/">View Exercises</a>
+                </article>
+            </div>
+        </section>
 
-    <section>
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I have worked on in WDD130.</p>
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <h2>Contact Me</h2>
+            <p>Have something to say? Send me a message.</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Project</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
 
-            <tbody>
-                <tr>
-                    <td>WWR</td>
-                    <td>My white water rafting website.</td>
-                </tr>
-                <tr>
-                    <td>ICE</td>
-                    <td>My in-class exercises and assignments.</td>
-                </tr>
-            </tbody>
-        </table>
-        <h5>Project Notes</h5>
-        <p>These projects help me practice web development.</p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-        <h6>More Details</h6>
-        <p>I will continue adding projects as I complete them.</p>
-    </section>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-
-    
-<section>
-    <h2>Contact Me</h2>
-    <p>Use this form to leave a message.</p>
-
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
 
     </main>
 
-<footer>
-    <p>Copyright 2026 Lincoln Scott</p>
-    <p><a href="mailto:Linc3.141592@gmail.com">Email Me</a></p>
-</footer>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a href="mailto:Linc3.141592@gmail.com">✉ Email</a>
+            </div>
+
+            <p>© 2026 Lincoln Scott</p>
+        </div>
+    </footer>
+
 </body>
-</html></html>
+</html>
