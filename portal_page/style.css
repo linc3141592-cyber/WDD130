@@ -50,8 +50,8 @@ header {
 }
 
 .branding img {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
@@ -68,7 +68,7 @@ nav {
 nav a {
     color: #F5F1E8;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     transition: color 0.2s;
 }
 
@@ -79,26 +79,10 @@ nav a:hover {
 /* WELCOME SECTION */
 
 .hero {
-    background:
-        linear-gradient(rgba(74, 120, 153, 0.15),
-        rgba(74, 120, 153, 0.15)),
-        linear-gradient(to bottom, #E9F1F4, #BBD3DF);
-    padding: 55px 7%;
+    background: linear-gradient(to bottom, #E9F1F4, #BBD3DF);
+    padding: 65px 7%;
     position: relative;
     overflow: hidden;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 75px;
-    background: #F5F1E8;
-    clip-path: polygon(0 80%, 15% 30%, 30% 75%,
-    48% 15%, 65% 75%, 82% 25%, 100% 80%, 100% 100%, 0 100%);
-    opacity: 0.5;
 }
 
 .hero-content {
@@ -106,43 +90,54 @@ nav a:hover {
     margin: auto;
     display: flex;
     align-items: center;
-    gap: 45px;
+    justify-content: center;
+    gap: 60px;
     position: relative;
     z-index: 1;
 }
 
+/* PROFILE PICTURE */
+
 .hero-image {
-    width: 220px;
-    height: 180px;
-    background-color: #D7E5EA;
-    border: 2px solid #4A7899;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
     overflow: hidden;
+    border: 3px solid #4A7899;
+    background-color: #D7E5EA;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(23, 42, 58, 0.2);
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
+    object-position: center;
+}
+
+.hero-text {
+    max-width: 450px;
 }
 
 .hero-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 12px;
 }
 
 .hero-text p {
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .button {
     display: inline-block;
     background-color: #4A7899;
     color: white;
-    padding: 12px 25px;
+    padding: 13px 28px;
     text-decoration: none;
+    border-radius: 4px;
     transition: background-color 0.2s;
 }
 
@@ -153,56 +148,59 @@ nav a:hover {
 /* SECTION STYLING */
 
 .section {
-    padding: 40px 7%;
+    padding: 45px 7%;
     max-width: 1200px;
     margin: auto;
 }
 
 .section > h2 {
-    border-bottom: 2px solid #4A7899;
+    border-bottom: 2px solid #5EEAD4;
     padding-bottom: 12px;
 }
 
 .about-intro {
     max-width: 850px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    font-size: 17px;
 }
 
 /* ABOUT ME CARDS */
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 
 .info-card {
     background-color: #E5EEF1;
-    border: 1px solid #4A7899;
-    padding: 22px;
+    border: 1px solid #BBD3DF;
+    border-radius: 8px;
+    padding: 25px;
     text-align: center;
+    box-shadow: 0 3px 10px rgba(23, 42, 58, 0.08);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 12px rgba(23, 42, 58, 0.15);
+    box-shadow: 0 6px 15px rgba(23, 42, 58, 0.15);
 }
 
 .card-icon {
     font-size: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .info-card h3 {
     color: #172A3A;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .info-card ul {
     text-align: left;
     padding-left: 20px;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 /* GOALS SECTION */
@@ -210,7 +208,7 @@ nav a:hover {
 .goals {
     background-color: #DCE9EE;
     max-width: none;
-    padding: 45px 7%;
+    padding: 55px 7%;
 }
 
 .goals-content {
@@ -218,7 +216,7 @@ nav a:hover {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -228,16 +226,19 @@ nav a:hover {
 }
 
 .goals-text ul {
-    padding-left: 20px;
+    padding-left: 22px;
     line-height: 2;
 }
 
 .goals-text h3 {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
+/* MOUNTAIN ILLUSTRATION */
+
 .mountain-art {
-    height: 230px;
+    height: 250px;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -253,15 +254,15 @@ nav a:hover {
 }
 
 .mountain-one {
-    left: 5%;
+    left: 2%;
     border-bottom-color: #4A7899;
 }
 
 .mountain-two {
-    left: 35%;
+    left: 30%;
     border-left-width: 130px;
     border-right-width: 130px;
-    border-bottom-width: 200px;
+    border-bottom-width: 210px;
     border-bottom-color: #172A3A;
 }
 
@@ -272,8 +273,8 @@ nav a:hover {
 
 .flag {
     position: absolute;
-    left: 61%;
-    bottom: 190px;
+    left: 59%;
+    bottom: 200px;
     height: 35px;
     width: 2px;
     background-color: #172A3A;
@@ -294,14 +295,19 @@ nav a:hover {
 
 .project-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
 }
 
 .project-list article {
     background-color: #E5EEF1;
-    padding: 20px;
+    padding: 25px;
     border-left: 4px solid #4A7899;
+    border-radius: 5px;
+}
+
+.project-list h3 {
+    margin-top: 0;
 }
 
 .project-list a {
@@ -317,31 +323,40 @@ nav a:hover {
 
 .contact {
     background-color: white;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    border-radius: 8px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     max-width: 550px;
 }
 
 input, textarea {
-    padding: 12px;
+    width: 100%;
+    padding: 13px;
     border: 1px solid #4A7899;
+    border-radius: 4px;
     font-family: Arial, sans-serif;
     font-size: 15px;
     background-color: #F5F1E8;
+}
+
+textarea {
+    resize: vertical;
 }
 
 button {
     background-color: #4A7899;
     color: white;
     border: none;
-    padding: 13px;
+    border-radius: 4px;
+    padding: 14px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 button:hover {
@@ -353,7 +368,7 @@ button:hover {
 footer {
     background-color: #172A3A;
     color: #F5F1E8;
-    padding: 20px 7%;
+    padding: 25px 7%;
 }
 
 .footer-content {
@@ -393,9 +408,23 @@ footer p {
         justify-content: center;
     }
 
+    .hero {
+        padding: 40px 6%;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
+        gap: 25px;
+    }
+
+    .hero-image {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
     }
 
     .cards {
@@ -408,11 +437,19 @@ footer p {
 
     .mountain-art {
         max-width: 400px;
-        width: 100%;
         margin: auto;
     }
 
     .project-list {
         grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 35px 6%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
 }
